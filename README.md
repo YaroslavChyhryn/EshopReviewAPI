@@ -13,7 +13,7 @@ REST api for eshop quality reviews - https://eshopreviewapi.herokuapp.com/
 ## Usage example
 1. `http://eshopreviewapi.herokuapp.com/api/shops?ordering=-review_count` - will return shop list order by review count
 2. `http://eshopreviewapi.herokuapp.com/api/shops?search=rozetka` - will serach shop with damain 'rozetka'
-3. you  can find more examples in EshopReviews_localhost.postman_collection.json
+3. you  can find more examples in `EshopReviews_localhost.postman_collection.json` or `EshopReviews_heroku.postman_collection.json` note: review_id in get_review edit_review and delete_review is hard coded.
 ## How to run Local
 1. `git clone` - clone repository
 2. `pytohn -m venv venv` - craete virtual enviroment
