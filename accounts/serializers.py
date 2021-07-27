@@ -1,5 +1,4 @@
 from rest_framework import serializers
-from django.conf import settings
 from rest_framework.authtoken.models import Token
 from django.contrib.auth import get_user_model
 
@@ -18,9 +17,8 @@ class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
 
     def create(self, validated_data):
-
         user = UserModel.objects.create_user(
-            username=validated_data['email'],
+            username=validated_data['username'],   #for unique username and login with email as username
             email=validated_data['email'],
             password=validated_data['password'],
         )
@@ -29,4 +27,4 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = UserModel
-        fields = ("id", "email", "password",)
+        fields = ("id", "username", "email", "password",)
