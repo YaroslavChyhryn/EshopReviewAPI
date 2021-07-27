@@ -18,7 +18,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"user@email.com\",\r\n    \"password\": \"my_awesome_password_42\"\r\n}",
+							"raw": "{\r\n    \"username\": \"user@email.com\",\r\n    \"email\": \"user@email.com\",\r\n    \"password\": \"my_awesome_password_42\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
