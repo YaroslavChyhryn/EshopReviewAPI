@@ -1,15 +1,14 @@
 from .serializers import ReviewSerializer, ShopSerializer, UserReviewSerializer
 from rest_framework import viewsets
-from rest_framework.response import Response
 from rest_framework.pagination import LimitOffsetPagination
 from .models import ReviewModel, ShopModel
-from rest_framework.decorators import api_view
 from rest_framework.generics import ListAPIView
 from rest_framework import filters
 from django.db.models import Count, Avg
 from rest_framework import permissions
 from .permissions import IsOwnerOrReadOnly
 from django.contrib.auth import get_user_model
+
 
 UserModel = get_user_model()
 
