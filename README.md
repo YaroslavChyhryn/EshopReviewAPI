@@ -30,12 +30,6 @@ DATABASE_URL=***psql://login:password@127.0.0.1:5432/db_name***
 10. `pytohn manage.py test` - run unittests
 11. `pytohn manage.py runserver` - run server
 ## Deploy
-### Create docker
-Build the new image and spin up a new container:
-```
-$ docker build -t web:latest .
-$ docker run -d --name django-heroku -e "PORT=8765" -p 8007:8765 web:latest
-```
 ### Heroku Setup
 [Sign up](https://signup.heroku.com/)  for Heroku account (if you don’t already have one), and then install the  [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)  (if you haven't already done so).
 
